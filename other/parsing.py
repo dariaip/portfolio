@@ -16,8 +16,8 @@ def get_flights_info(airport_from_code, airport_to_code, date_year, date_month, 
     br.addheaders = [('User-agent', 'Chrome')]
 
     browser = webdriver.Chrome("\selenium\chromedriver.exe") #a local way to a driver
-    browser.get('https://www.tickets.com/') #url
- is intentionally changed    time.sleep(5) #pause for waiting of browser opening
+    browser.get('https://www.tickets.com/') #url is intentionally changed
+    time.sleep(5) #pause for waiting of browser opening
 
     #change language
     elem = browser.find_element_by_xpath('//*[@id="languageDropDownButton"]').click() #find the element on the page and click on it
